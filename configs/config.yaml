@@ -1,0 +1,24 @@
+sources:
+  base_folder: "C:\\Data\\ProyectoICiberseguridad"
+  discover_patterns: ["*.xlsx", "*.csv", "**/*.xlsx", "**/*.csv"]
+
+schema:
+  primary_key: ["Codigo_Producto"]
+  columns:
+    Codigo_Producto: {type: "string", required: true}
+    Nombre: {type: "string", required: true}
+    Descripcion_Producto: {type: "string", required: false}
+    Stock: {type: "int", required: true, min: 0}
+    Categoria: {type: "string", required: false}
+    Imagen: {type: "string", required: false}
+
+load:
+  type: "mysql"
+  table: "dw_inventario"
+  parquet_out: "C:\\Data\\ProyectoICiberseguridad\\data_curated\\inventario_curado.parquet"
+
+security:
+  tls_required: false
+
+audit:
+  print_json_log: true

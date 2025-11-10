@@ -1,0 +1,16 @@
+{
+  "correlation_id": "9d86818e-d059-46de-8d96-7d15eec4e15d",
+  "rows_extracted": 14685,
+  "rows_transformed": 10014,
+  "rows_loaded": 10014,
+  "errors": [],
+  "transform_discards": {
+    "total_entrada": 14685,
+    "nombre_vacio": 51,
+    "stock_invalido": 145,
+    "duplicados_codigo": 4475,
+    "total_salida": 10014
+  },
+  "started_at_utc": "2025-11-09T23:43:13.519172+00:00",
+  "ended_at_utc": "2025-11-09T23:43:15.259639+00:00"
+}
